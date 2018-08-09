@@ -18,6 +18,12 @@ Put the  yolov3-obj_3100.weights under backup folder. If backup folder doesn't e
 
 Remember to edit settings.py and update the weight name
 
+run the following command in bash:
+```
+test
+./darknet detector test cfg/obj.data cfg/yolov3-obj.cfg backup/yolov3-obj_1300.weights data/obj/904.JPEG(image file location)
+```
+
 ### If you have new images, and further train the model
 The training of the whole model is based on this post: https://timebutt.github.io/static/how-to-train-yolov2-to-detect-custom-objects/
 
@@ -36,9 +42,9 @@ For setup, Make sure cuda is installed, or you can edit Makefile based on your s
 * CUDA >= 7.5
 
 Follow instructionss of darknet, run following commands (assume we start from weight 3100)
-
+```
 ./darknet detector train cfg/obj.data cfg/yolov3-obj.cfg backup/yolov3-obj_3100.weights 
-
+```
 ## How to add your own data
 ### launch BBox training tool to do the labelling
 Find the labelling tool from here: https://github.com/puzzledqs/BBox-Label-Tool
