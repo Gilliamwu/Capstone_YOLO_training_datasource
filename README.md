@@ -20,7 +20,7 @@ Remember to edit settings.py and update the weight name
 
 run the following command in bash:
 ```
-test
+make
 ./darknet detector test cfg/obj.data cfg/yolov3-obj.cfg backup/yolov3-obj_1300.weights data/obj/904.JPEG(image file location)
 ```
 
