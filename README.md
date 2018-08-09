@@ -6,8 +6,8 @@ There are three parts:
 * labels: self-labelling of the cracks on these images
 * test.txt: for training of model
 * train.txt: for training of model
-* yolov3-obj_3100.weights: weight of crack detection after training 3100 epoches
-* yolov3-obj_1300.weights: weight of crack detection after training 1300 epoches
+* yolov3-obj_3100.weights (in dropbox): weight of crack detection after training 3100 epoches
+* yolov3-obj_1300.weights (in dropbox): weight of crack detection after training 1300 epoches
 
 
 ## How to use it:
@@ -29,8 +29,15 @@ copy images and labesl under data/obj
 
 copy train.txt and test.txt
 
+For setup, Make sure cuda is installed, or you can edit Makefile based on your setup. Current requirement:
+* Linux GCC>=4.9
+* GPU with CC >= 3.0:
+* cuDNN v5-v7
+* CUDA >= 7.5
+
 Follow instructionss of darknet, run following commands (assume we start from weight 3100)
 
+./darknet detector train cfg/obj.data cfg/yolov3-obj.cfg backup/yolov3-obj_3100.weights 
 
 ## How to add your own data
 ### launch BBox training tool to do the labelling
