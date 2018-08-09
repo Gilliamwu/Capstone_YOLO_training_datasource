@@ -33,6 +33,16 @@ Follow instructionss of darknet, run following commands (assume we start from we
 
 
 ## How to add your own data
+### launch BBox training tool to do the labelling
+Find the labelling tool from here: https://github.com/puzzledqs/BBox-Label-Tool
+
+Remember to translate all images to JPEG. Put them under Images folder with number, and in the main window, key in the number and label
+
+### translate BBox label to YOLO label
+Use labelling_tool/convert.py, to convert the crack data to YOLO data
+
+### generate train.txt and test.txt
+Use labelling_tool/generate_train_test_list.py to generate two files, separating data to train and test.
 
 ## related github:
 darknet: https://github.com/Gilliamwu/darknet
