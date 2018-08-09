@@ -45,7 +45,8 @@ Follow instructionss of darknet, run following commands (assume we start from we
 ```
 ./darknet detector train cfg/obj.data cfg/yolov3-obj.cfg backup/yolov3-obj_3100.weights 
 ```
-### then if backend need the newest weight, repeat "If you just want to use it for detection", but change the weight file name by the latest weight
+
+Then if Database+Flask backend need the newest weight, repeat "If you just want to use it for detection", but change the weight file name by the latest weight
 
 
 ## How to add your own data
@@ -59,7 +60,8 @@ Use labelling_tool/convert.py, to convert the crack data to YOLO data
 
 ### generate train.txt and test.txt
 Use labelling_tool/generate_train_test_list.py to generate two files, separating data to train and test.
-### then repeat the steps in "If you have new images, and further train the model" section
+
+Then repeat the steps in "If you have new images, and further train the model" section
 
 ## related github:
 darknet: https://github.com/Gilliamwu/darknet
@@ -68,8 +70,9 @@ capstone server code: https://github.com/Gilliamwu/Capstone_DB_code
 
 ## Special notes
 ### When I should stop my training
-As the origional darknet repository mentioned, when after around 8000 iterations, average loss is not dropping anymore, you could probably stop.
+As the origional darknet repository mentioned, when maybe after 8000 iterations, average loss is not dropping anymore, you could probably stop.
 
 ## Data sources:
 Crack forest: Amhaz, R., Chambon, S., Idier, J., & Baltazart, V. (2014). A new minimal path selection algorithm for automatic crack detection on pavement images. 2014 IEEE International Conference on Image Processing (ICIP). doi:10.1109/icip.2014.7025158
+
 Crack detection database: Yong Shi, Limeng Cui, Zhiquan Qi, Fan Meng, and Zhensong Chen.  Automatic road crack detection using random structured forests. IEEE Transactions on Intelligent Transportation Systems, 17(12):3434–3445, 2016
