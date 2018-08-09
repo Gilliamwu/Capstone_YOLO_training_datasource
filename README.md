@@ -69,8 +69,8 @@ darknet: https://github.com/Gilliamwu/darknet
 capstone server code: https://github.com/Gilliamwu/Capstone_DB_code
 
 ## Special notes
-### When I should stop my training
-As the origional darknet repository mentioned, when maybe after 8000 iterations, average loss is not dropping anymore, you could probably stop.
+### When should I stop my training?
+As the original darknet repository mentioned, when maybe after 8000 iterations, average loss is not dropping anymore, you could probably stop.
 
 ## Data sources:
 Crack forest: Amhaz, R., Chambon, S., Idier, J., & Baltazart, V. (2014). A new minimal path selection algorithm for automatic crack detection on pavement images. 2014 IEEE International Conference on Image Processing (ICIP). doi:10.1109/icip.2014.7025158
